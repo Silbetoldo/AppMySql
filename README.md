@@ -19,12 +19,11 @@ cd NomedoProjeto
 code .
 
 2. Configuração do Banco de Dados MySQL
-1. Criar o banco de dados:
 Executar o comando SQL:
+1. Criar o banco de dados:
 CREATE DATABASE mydatabase;
 
 2. Criar a tabela users:
-Executar o comando SQL:
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(100) NOT NULL,
@@ -33,24 +32,22 @@ CREATE TABLE users (
 );
 
 3. Instalação das Dependências
-1. Instalar dependências para rodar o app na web:
+Executar o comando no terminal do VS Code:
 
-Executar o comando no terminal do VS Code
+1. Instalar dependências para rodar o app na web:
 
 npx expo install react-native-web@~0.19.10 react-dom@18.2.0 @expo/metro-runtime@~3.2.1
 
 2. Instalar dependências para usar a API e gerenciar rotas e middleware:
 
-Executar o comando no terminal do VS Code:
-
 npm install express mysql body-parser cors
 
 3. Instalar dependências para os métodos HTTP:
 
-Executar o comando no terminal do VS Code:
 npm install axios
 
 4. Iniciar o Servidor
+
 1. Criar o arquivo server.js para configurar o servidor Express.
 
 2. Iniciar o servidor:
